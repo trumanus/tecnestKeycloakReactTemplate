@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { render } from "react-dom";
 import "./index.scss";
-import { App } from "./App";
+
 import {
   KcApp as KcAppBase,
   defaultKcProps,
@@ -24,8 +24,7 @@ if (kcContext !== undefined) {
 }
 
 render(
-  kcContext === undefined ?
-    <App /> :
+
     <KcApp />,
   document.getElementById("root")
 );
